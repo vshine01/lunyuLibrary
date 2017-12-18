@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>特聘专家</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/expert.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/mui.min.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/rem.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="box">
+        <div id="mainContent">
+            <div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+                <!--侧滑菜单部分-->
+                <aside id="offCanvasSide" class="mui-off-canvas-left left-slide">
+                    <ul class="navLists">
+                        <li><a href="index.html">首页<span>></span></a></li>
+                        <li><a href="lunyuInterpretation.html">论语解读<span>></span></a></li>
+                        <li><a href="lunyuLibrary.html">论语数字博物馆简介<span>></span></a></li>
+                        <li><a href="co.html">合作资源<span>></span></a></li>
+                        <li><a href="expert.html">专家模块<span>></span></a></li>
+                        <li><a href="lunyuCharitable.html">论语公益<span>></span></a></li>
+                        <li><a href="lunyuMeeting.html">论语大会<span>></span></a></li>
+                        <li><a href="memberRegister.html">会员注册<span>></span></a></li>
+                    </ul>
+                </aside>
+                <!--主界面部分-->
+                <div class="mui-inner-wrap">
+                    <div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+                        <div class="mui-scroll">
+                            <!-- 标题 -->
+                            <div class="pageTitle">
+                                <span></span>合作专家介绍
+                            </div>
+                            <!-- 专家资源 -->
+                            <div class="expertResource">
+                                <img src="images/expert.png" alt="">
+                            </div>
+                            <!-- 专家简介模块 -->
+                            <div class="expertsBox">
+                                <!-- 1 -->
+                                <div class="expertContent">
+                                    <p class="expertName">汤恩佳</p>
+                                    <div class="expertImg">
+                                        <img src="images/expert1.png" alt="">
+                                    </div>
+                                    <p class="expertDecoration">香港孔教学院院长、世界儒商联合会会长、国际儒学联合会副理事长，美国爱奥华威斯理安大学工商管理博士，世界著名儒学文化名人。任香港特别行政区政府第九、十届、十一届中国人民代表大会选举委员会成员，第一、二、三、四届立法会委员及行政长官推选委员会委员，亚洲羽毛球总会永远名誉会长等，300多个社会上各界荣誉职衔。他在香港政府礼宾编制排名(Hong Kong SAR Order of Precedence)第十一。</p>
+                                </div>
+                                <!-- 2 -->
+                                <div class="expertContent">
+                                    <p class="expertName">李瑞智（reg little）</p>
+                                    <div class="expertImg">
+                                        <img src="images/expert1.png" alt="">
+                                    </div>
+                                    <p class="expertDecoration">国际儒联副会长，曾担任澳大利亚外交官二十五年，相继任职于日本，老挝，孟加拉，美国纽约，爱尔兰，中国香港，中国大陆，瑞士和加勒比地区。他曾在澳大利亚堪培拉主管北亚，国际经济组织及政策规划的代表团担任代表以及五个具体事务的负责人，同时还是澳大利亚中国理事会的执行董事。获得了日文与中文的高级语言资格。</p>
+                                </div>
+                            </div>
+                            <!-- 空div当成间隔 -->
+                            <div class="interval"></div>
+                            <!-- footer -->
+                            <div class="footer">
+                                ©2017 论语数字博物馆 版权所有
+                                <!-- <span>Top</span> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mui-off-canvas-backdrop"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="js/mui.min.js"></script>
+<script src="js/resolveClickProblem.js"></script>
+
+<script>
+    $(function() {
+        $("#header").load("./layout/header.html");
+    });
+    $(function() {
+        // 初始化滚动
+        mui('.mui-scroll-wrapper').scroll({
+            scrollY: true, //是否竖向滚动
+            scrollX: false, //是否横向滚动
+            startX: 0, //初始化时滚动至x
+            startY: 0, //初始化时滚动至y
+            indicators: false, //是否显示滚动条
+            deceleration:0.0006, //阻尼系数,系数越小滑动越灵敏
+            bounce: true //是否启用回弹
+        });
+    })
+</script>

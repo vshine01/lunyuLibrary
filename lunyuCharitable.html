@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>论语公益-论语数组博物馆</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/lunyuCharitable.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/rem.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="box">
+        <div id="mainContent">
+            <div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+                <!--侧滑菜单部分-->
+                <aside id="offCanvasSide" class="mui-off-canvas-left left-slide">
+                    <ul class="navLists">
+                        <li><a href="index.html">首页<span>></span></a></li>
+                        <li><a href="lunyuInterpretation.html">论语解读<span>></span></a></li>
+                        <li><a href="lunyuLibrary.html">论语数字博物馆简介<span>></span></a></li>
+                        <li><a href="co.html">合作资源<span>></span></a></li>
+                        <li><a href="expert.html">专家模块<span>></span></a></li>
+                        <li><a href="lunyuCharitable.html">论语公益<span>></span></a></li>
+                        <li><a href="lunyuMeeting.html">论语大会<span>></span></a></li>
+                        <li><a href="memberRegister.html">会员注册<span>></span></a></li>
+                    </ul>
+                </aside>
+                <!--主界面部分-->
+                <div class="mui-inner-wrap">
+                    <div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+                        <div class="mui-scroll">
+                            <div class="videoBox">
+                                <div class="video">
+                                    <!-- 标题 -->
+                                    <div class="pageTitle">
+                                        <span></span>论语数字博物馆
+                                    </div>
+                                    <!-- video -->
+                                    <div class="lunyuVideoBox">
+                                        <video src="videos/example.mp4" controls>您的浏览器不支持播放</video>
+                                    </div>
+                                    <!--  间隔-->
+                                    <div class="videoInterval"></div>
+                                </div>
+                                <div class="video">
+                                    <!-- 标题 -->
+                                    <div class="pageTitle">
+                                        <span></span>重走夫子路
+                                    </div>
+                                    <!-- video -->
+                                    <div class="lunyuVideoBox">
+                                        <video src="videos/example.mp4" controls>您的浏览器不支持播放</video>
+                                    </div>
+                                    <!--  间隔-->
+                                    <div class="videoInterval"></div>
+                                </div>
+                                <div class="video">
+                                    <!-- 标题 -->
+                                    <div class="pageTitle">
+                                        <span></span>论语数字博物馆
+                                    </div>
+                                    <!-- video -->
+                                    <div class="lunyuVideoBox">
+                                        <video src="videos/example.mp4" controls>您的浏览器不支持播放</video>
+                                    </div>
+                                    <!--  间隔-->
+                                    <div class="videoInterval"></div>
+                                </div>
+                            </div>
+                            <!-- footer -->
+                            <div class="footer">
+                                ©2017 论语数字博物馆 版权所有
+                                <!-- <span>Top</span> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mui-off-canvas-backdrop"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="js/mui.min.js"></script>
+<script src="js/swiper-3.4.2.min.js"></script>
+<script src="js/resolveClickProblem.js"></script>
+
+<script>
+    $(function() {
+        $("#header").load("./layout/header.html");
+    });
+    $(function() {
+        // 初始化滚动
+        mui('.mui-scroll-wrapper').scroll({
+            scrollY: true, //是否竖向滚动
+            scrollX: false, //是否横向滚动
+            startX: 0, //初始化时滚动至x
+            startY: 0, //初始化时滚动至y
+            indicators: false, //是否显示滚动条
+            deceleration:0.0006, //阻尼系数,系数越小滑动越灵敏
+            bounce: true //是否启用回弹
+        });
+    })
+</script>

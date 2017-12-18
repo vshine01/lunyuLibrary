@@ -1,0 +1,133 @@
+#box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+}
+#header {
+    height: 2.25rem;
+    width: 100%;
+    background: #5d5d5d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.mui-content {
+    background: #fff!important;
+}
+#mainContent {
+    margin-top: 2.25rem;
+    flex: 1;
+}
+#mainContent .left-slide {
+    width: 65%!important;
+}
+
+/* 侧边导航栏 */
+.navLists {
+    width: 100%;
+    height: auto;
+}
+.navLists li {
+    height: 2rem;
+    line-height: 2rem;
+    border-bottom: 1px solid #555;
+}
+.navLists li:last-child {
+    border: 0;
+}
+.navLists li a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 0.7rem;
+    padding-left: 20px;
+}
+.navLists li a span {
+    float: right;
+    margin-right: 15px;
+}
+
+
+
+/* 内容部分 */
+.pageTitle {
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 0.7rem;
+    border-bottom: 1px solid #f0f0f0;
+    padding-left: 15px;
+    position: relative;
+}
+.pageTitle  .titleIcon {
+    display: inline-block;
+    height: 60%;
+    width: 5px;
+    background: #000;
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
+.pageTitle a {
+    color: #000;
+    float: right;
+    margin-right: 0.5rem;
+    display: inline-block;
+    width: 5%;
+}
+
+/*  */
+.interpretationContent {
+    padding: 0.5rem;
+}
+.interpretationContent a:first-child .interpretation {
+    margin-top: 0;
+}
+.interpretation {
+    height: 9rem;
+    position: relative;
+    margin-top: 1rem;
+}
+.interpretation img {
+    width: 100%;
+    height: 100%;
+}
+
+.interpretationCover {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.65);
+}
+.interInfo, .interName {
+    width: 70%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 15% auto 0;
+    text-align: center;
+    color: #fff;
+    font-size: 0.78rem;
+}
+.interInfo {
+    margin-top: 0;
+    font-size: 0.6rem;
+}
+
+
+/* footer */
+.footer {
+    height: 1.35rem;
+    width: 100%;
+    background: #595959;
+    margin-top: 20px;
+    line-height: 1.35rem;
+    font-size: 0.4rem;
+    color: #fff;
+    text-align: center;
+}

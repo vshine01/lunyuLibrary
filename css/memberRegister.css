@@ -1,0 +1,40 @@
+#meetContent {
+    background: #fff;
+}
+#header {
+    background: -webkit-linear-gradient(bottom left,#666,#333);
+    background: linear-gradient(bottom left,#666,#333);
+}
+#header a {
+    color: #fff;
+}
+#header h1 {
+    color: #fff;
+}
+.mui-input-group {
+    background-color: #f6f6f6!important;
+    border: 1px solid #ccc!important;
+    border-radius: 5px;
+    font-size: 0.7rem;
+}
+.mui-input-row label {
+    width: 25%!important;
+}
+.mui-input-row label~input {
+    width: 75%!important;
+}
+
+.mui-input-group input {
+    font-size: 0.7rem;
+}
+.registerBox {
+    margin-top: 44px;
+    padding: 0.5rem;
+}
+.registerBtn {
+    width: 100%;
+    margin-top: 10px;
+    background: -webkit-linear-gradient(bottom left,#666,#333);
+    background: linear-gradient(bottom left,#666,#333);
+    border: 0!important;
+}

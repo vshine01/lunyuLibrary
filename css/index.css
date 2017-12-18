@@ -1,0 +1,198 @@
+
+#box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+}
+#header {
+    height: 2.25rem;
+    width: 100%;
+    background: #5d5d5d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.mui-content {
+    background: #fff!important;
+}
+#mainContent {
+    margin-top: 2.25rem;
+    flex: 1;
+}
+#mainContent .left-slide {
+    width: 65%!important;
+}
+#mainContent .banner {
+    width:　100%;
+    height: 7.5rem;
+}
+#mainContent .banner .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+#mainContent .banner .swiper-slide img {
+    height: 100%;
+    width: 100%;
+}
+.innerNav {
+    padding: 0.6rem;
+    width: 100%;
+    height: 11.75rem;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.innerNav .innerNavBox {
+    width: 4.0rem;
+    height: 5.0rem;
+}
+.innerNav .innerNavBox .innerNavBoxImg {
+    height: 2.75rem;
+    width: 2.75rem;
+    margin: 10px auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.innerNav .innerNavBox .innerNavBoxImg img {
+    width: 100%;
+    height: 100%;
+}
+.innerNav .innerNavBox p {
+    font-size: 0.6rem;
+    color: #000;
+    text-align: center;
+}
+.lunyuDecoration {
+    padding: 0.5rem;
+    border-bottom: 5px solid #f5f5f5;
+}
+.lunyuDecoration .lunyuDecorationImg {
+    width: 100%;
+    height: 100%;
+}
+.lunyuDecoration .lunyuDecorationImg img {
+    height: 100%;
+    width: 100%;
+}
+.lunyuDecoration .decoration {
+    text-indent: 2rem;
+    font-size: 0.4rem;
+    margin-bottom: 0;
+}
+.lunyujiedu {
+    width: 100%;
+    height: auto;
+}
+.jieduHeader {
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 0.8rem;
+    padding-left: 10px;
+    font-weight: 550;
+    border-bottom: 1px solid #f5f5f5;
+}
+.jieduHeader a {
+    text-decoration: none;
+    color: #000;
+    float: right;
+    margin-right: 10px;
+}
+.jieduBox {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+}
+.jiedu_left {
+    height: 5rem; 
+    width: 7rem;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    position: relative;
+}
+.jiedu_left .circle {
+    position: absolute;
+    right: -5px;
+    top: 30%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    border: 2px solid #f2f2f2;
+}
+.jiedu_left .publishTime {
+    color: #000;
+    font-size: 0.8rem;
+}
+.jiedu_left .publishTitle {
+    font-size: 0.4rem;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.jiedu_right {
+    height: 5rem;
+    flex: 1;
+    padding: 10px 15px;
+}
+.jiedu_right img {
+    width: 100%;
+    height: 100%;
+}
+.interval {
+    width: 100%;
+    height: 3px;
+    background: #f5f5f5;
+    margin-top: 10px;
+}
+
+.footer {
+    height: 1.35rem;
+    width: 100%;
+    background: #595959;
+    margin-top: 20px;
+    line-height: 1.35rem;
+    font-size: 0.4rem;
+    color: #fff;
+    text-align: center;
+}
+/* .footer span {
+    float: right;
+    margin-right: 10px;
+} */
+
+/* 侧滑菜单栏部分 */
+.navLists {
+    width: 100%;
+    height: auto;
+}
+.navLists li {
+    height: 2rem;
+    line-height: 2rem;
+    border-bottom: 1px solid #555;
+}
+.navLists li:last-child {
+    border: 0;
+}
+.navLists li a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 0.7rem;
+    padding-left: 20px;
+}
+.navLists li a span {
+    float: right;
+    margin-right: 15px;
+}
+
+
+
+
+

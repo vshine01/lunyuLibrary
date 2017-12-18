@@ -1,0 +1,117 @@
+#box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+}
+#header {
+    height: 2.25rem;
+    width: 100%;
+    background: #5d5d5d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.mui-content {
+    background: #fff!important;
+}
+#mainContent {
+    margin-top: 2.25rem;
+    flex: 1;
+}
+#mainContent .left-slide {
+    width: 65%!important;
+}
+
+/* 侧边导航栏 */
+.navLists {
+    width: 100%;
+    height: auto;
+}
+.navLists li {
+    height: 2rem;
+    line-height: 2rem;
+    border-bottom: 1px solid #555;
+}
+.navLists li:last-child {
+    border: 0;
+}
+.navLists li a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 0.7rem;
+    padding-left: 20px;
+}
+.navLists li a span {
+    float: right;
+    margin-right: 15px;
+}
+
+
+
+/* 内容部分 */
+.pageTitle {
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 0.7rem;
+    border-bottom: 1px solid #f0f0f0;
+    padding-left: 15px;
+    position: relative;
+}
+.pageTitle  span {
+    display: inline-block;
+    height: 60%;
+    width: 5px;
+    background: #000;
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
+
+.expertResource {
+    height: 8.5rem;
+    padding: 0.5rem;
+}
+.expertResource img {
+    height: 100%;
+    width: 100%;
+}
+
+/* 专家介绍模块 */
+.expertsBox {
+    padding: 0.5rem;
+}
+.expertContent {
+    width: 100%;
+    height: auto;
+    margin-top: 2.9rem;
+}
+.expertsBox .expertContent:first-child {
+    margin-top: 0;
+}
+
+/* 专家图片 后续根据所给图片定义容器高度*/
+.expertImg {
+    width: 100%;
+    height: auto;
+}
+.expertImg img {
+    width: 100%;
+}
+
+
+/* footer 部分 */
+.footer {
+    height: 1.35rem;
+    width: 100%;
+    background: #595959;
+    margin-top: 20px;
+    line-height: 1.35rem;
+    font-size: 0.4rem;
+    color: #fff;
+    text-align: center;
+}

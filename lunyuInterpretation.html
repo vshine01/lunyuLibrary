@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>论语解读-论语数字博物馆</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/lunyuInterpretation.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/rem.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="box">
+        <div id="mainContent">
+            <div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+                <!--侧滑菜单部分-->
+                <aside id="offCanvasSide" class="mui-off-canvas-left left-slide">
+                    <ul class="navLists">
+                        <li><a href="index.html">首页<span>></span></a></li>
+                        <li><a href="lunyuInterpretation.html">论语解读<span>></span></a></li>
+                        <li><a href="lunyuLibrary.html">论语数字博物馆简介<span>></span></a></li>
+                        <li><a href="co.html">合作资源<span>></span></a></li>
+                        <li><a href="expert.html">专家模块<span>></span></a></li>
+                        <li><a href="lunyuCharitable.html">论语公益<span>></span></a></li>
+                        <li><a href="lunyuMeeting.html">论语大会<span>></span></a></li>
+                        <li><a href="memberRegister.html">会员注册<span>></span></a></li>
+                    </ul>
+                </aside>
+                <!--主界面部分-->
+                <div class="mui-inner-wrap">
+                    <div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+                        <div class="mui-scroll">
+                            <!-- 标题 -->
+                            <div class="pageTitle">
+                                <span class="titleIcon"></span>论语解读
+                                <a href="javascript:;">></a>
+                            </div>
+                            <!-- 内容 -->
+                            <div class="interpretationContent">
+                                <a href="interDetails.html">
+                                    <div class="interpretation">
+                                        <img src="images/bk1.jpg" alt="">
+                                        <div class="interpretationCover">
+                                            <p class="interName">论语中完美人格的赏析</p>
+                                            <p class="interInfo">论语中完美人格的赏析 【原文】子路问成人。子曰：“若臧武仲之知，公绰之不欲，卞庄子之勇，冉求之艺，文之以礼乐，亦...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- 2 -->
+                                <a href="interDetails.html">
+                                    <div class="interpretation">
+                                        <img src="images/bk1.jpg" alt="">
+                                        <div class="interpretationCover">
+                                            <p class="interName">一篇文章帮你读懂孔子周游列国</p>
+                                            <p class="interInfo">孔子青年时期（34-35岁）游历诸国：鲁国（今山东曲阜，孔子家乡）——周朝都城（今河南洛阳，孔子朝思暮想的周天子在...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- 3 -->
+                                <a href="interDetails.html">
+                                    <div class="interpretation">
+                                        <img src="images/bk1.jpg" alt="">
+                                        <div class="interpretationCover">
+                                            <p class="interName">秦晖：《论语》是怎么成为经典的？</p>
+                                            <p class="interInfo">今天有些人把《论语》抬高到近乎“儒家圣经”的程度，就像当年把一本薄薄的《毛主席语录》说成是马克思主义“顶峰”一...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- 4 -->
+                                <a href="interDetails.html">
+                                    <div class="interpretation">
+                                        <img src="images/bk1.jpg" alt="">
+                                        <div class="interpretationCover">
+                                            <p class="interName">《论语》好在适度，误在失度，坏在过度</p>
+                                            <p class="interInfo"> “过犹不及”，出自《论语.先进》，简言之，即做事超过或不够，都是不合适的。“过犹不及”的处世之道，就在于讲究一个...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- 5 -->
+                                <a href="interDetails.html">
+                                    <div class="interpretation">
+                                        <img src="images/bk1.jpg" alt="">
+                                        <div class="interpretationCover">
+                                            <p class="interName">论语中完美人格的赏析</p>
+                                            <p class="interInfo">论语中完美人格的赏析 【原文】子路问成人。子曰：“若臧武仲之知，公绰之不欲，卞庄子之勇，冉求之艺，文之以礼乐，亦...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- footer -->
+                            <div class="footer">
+                                ©2017 论语数字博物馆 版权所有
+                                <!-- <span>Top</span> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mui-off-canvas-backdrop"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="js/mui.min.js"></script>
+<script src="js/swiper-3.4.2.min.js"></script>
+<script src="js/resolveClickProblem.js"></script>
+
+<script>
+    $(function() {
+        $("#header").load("./layout/header.html");
+    });
+    $(function() {
+        // 初始化滚动
+        mui('.mui-scroll-wrapper').scroll({
+            scrollY: true, //是否竖向滚动
+            scrollX: false, //是否横向滚动
+            startX: 0, //初始化时滚动至x
+            startY: 0, //初始化时滚动至y
+            indicators: false, //是否显示滚动条
+            deceleration:0.0006, //阻尼系数,系数越小滑动越灵敏
+            bounce: true //是否启用回弹
+        });
+    })
+</script>
